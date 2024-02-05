@@ -1,0 +1,350 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+figcaption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figfigcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figfigcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+blockquote,
+q {
+	quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: "";
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* -------------------------
+
+
+
+
+
+
+
+
+Start of my CSS rules 
+
+
+
+
+
+
+
+
+------------------------- */
+
+/* -------------------------
+    General Styling 
+------------------------- */
+* {
+	box-sizing: border-box;
+}
+
+body {
+	max-width: 1600px;
+	margin: 0 auto;
+	font-family: "Fira Sans", Arial, Helvetica, sans-serif;
+	background-color: #e9d8dc;
+	padding: 3em;
+}
+
+/* -------------------------
+    Section Content Positioning
+------------------------- */
+
+section {
+	display: inline-block;
+	margin-bottom: 2em;
+	
+	
+}
+
+section + section {
+	margin-left: 4.25em;
+	width: 21.5em;
+	margin-top: 0.5em;
+}
+
+
+section:nth-child(3){
+	margin-left: 6em;
+	position: relative;
+	
+}
+
+
+section:nth-last-of-type(1){
+	margin-left: 0;
+}
+
+/* -------------------------
+    Other Content Positioning
+------------------------- */
+
+
+
+li {
+	padding-top: 0.5em;
+	padding-right: 1em;
+	margin-left: 5em;
+	
+	/* UL handy!! */
+}
+
+ul{
+	margin: 0.2em;
+	list-style:circle;
+	margin-left: 5em;
+	
+}
+
+ol{
+	list-style: decimal;
+	margin-left: 5em;
+}
+
+
+hr{
+	border: 0;
+	margin-top: 5em;
+	border-top: 4px dashed #bbb;
+}
+
+/* -------------------------
+         Typography
+------------------------- */
+
+h1,
+h2,
+h3,
+h4 {
+	font-family: "PT Serif", "Times New Roman", Times, serif;
+	color: rgb(60, 58, 58);
+}
+
+h1 {
+	font-size: 4em;
+	color: rgb(60, 58, 58);
+	text-align: center;
+	position: absolute;
+	bottom: 0.6em;
+	width: 100%;
+
+}
+
+span {
+	
+	text-decoration: underline;
+	padding-bottom: 1em;
+	
+}
+
+h2 {
+	font-size: 2em;
+	margin-top: 2em;
+	margin-bottom: 2em;
+	margin-left: 1em;
+	
+}
+
+h3 {
+	font-size: 1.5em;
+	line-height: 1.4em;
+	margin-left: 1em;
+	
+	
+}
+
+h4{
+
+	font-size: 1.5em;
+	line-height: 1.4em;
+	margin-top: -1em;
+	margin-left: 2em;
+
+}
+
+br + span{
+
+	text-decoration: none;
+	color: #52b2cf;
+}
+
+p, li {
+	font-size: 1.15em;
+	color: rgb(60, 58, 58);
+	line-height: 1.3em;
+	margin-left: 1em;
+	
+}
+
+figcaption{
+	line-height: 1.5em;
+}
+
+a{
+	text-decoration: none;
+	color: #52b2cf;
+}
+
+
+/* -------------------------
+            Images
+------------------------- */
+
+img {
+	border-radius: 8px;
+	margin: 1.8em;
+	margin-left: 1em;
+	object-fit: cover;
+	width: 300px;
+	height: 300px;
+	margin-right: -0.2em;
+}
+
+img + img{
+
+	margin-right: -0.2em;
+}
+
+img:first-of-type{
+
+	margin-left: 4em;
+}
+
+figure{
+	padding: 2em;
+	margin-bottom: 2em;
+	border-radius: 30px;
+	background-color: #00000005;
+}
+
+/* -------------------------
+           Footer
+------------------------- */
+
+footer{
+
+	margin-top: 6em;
+}
